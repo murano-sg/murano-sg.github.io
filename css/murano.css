@@ -6,7 +6,7 @@ body {
 /* Custom container */
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 733px;
 }
 .container > hr {
   margin: 60px 0;
@@ -56,8 +56,8 @@ body {
 .navbar .nav li a {
   font-weight: bold;
   text-align: center;
-  border-left: 1px solid rgba(255,255,255,.75);
-  border-right: 1px solid rgba(0,0,0,.1);
+  /*border-left: 1px solid rgba(255,255,255,.75);*/
+  /*border-right: 1px solid rgba(0,0,0,.1);*/
 }
 .navbar .nav li:first-child a {
   border-left: 0;
