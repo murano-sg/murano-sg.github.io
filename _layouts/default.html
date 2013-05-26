@@ -30,15 +30,17 @@
     <div class="container">
 
       <div class="masthead">
+        <img src="/img/murano_logo.jpg" width="180px">
+        <br><br>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="/">Murano</a></li>
-                <li><a href="/wocol/">WoCol</a></li>
-                <li><a href="/pisen/">PiSen</a></li>
-                <li><a href="/mazer/">MAZER</a></li>
-                <li><a href="/about/">About</a></li>
+                <li {% if page.active_tag == 'home' %}class="active"{% endif %}><a href="/">Murano</a></li>
+                <li {% if page.active_tag == 'wocol' %}class="active"{% endif %}><a href="/wocol/">WoCol</a></li>
+                <li {% if page.active_tag == 'pisen' %}class="active"{% endif %}><a href="/pisen/">PiSen</a></li>
+                <li {% if page.active_tag == 'mazer' %}class="active"{% endif %}><a href="/mazer/">MAZER</a></li>
+                <li {% if page.active_tag == 'about' %}class="active"{% endif %}><a href="/about/">About</a></li>
               </ul>
             </div>
           </div>
@@ -47,6 +49,7 @@
 
       {{ content }}
 
+      <br><br>
       <div class="footer">
         <p>&copy; MURANO PTE LTD 2013</p>
       </div>
