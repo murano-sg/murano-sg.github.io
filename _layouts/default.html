@@ -30,22 +30,16 @@
     <div class="container">
 
       <div class="masthead">
-        <img src="/img/murano_logo.jpg" width="180px">
-        <br><br>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li {% if page.active_tag == 'home' %}class="active"{% endif %}><a href="/">Murano</a></li>
-                <li {% if page.active_tag == 'wocol' %}class="active"{% endif %}><a href="/wocol/">WoCol</a></li>
-                <li {% if page.active_tag == 'pisen' %}class="active"{% endif %}><a href="/pisen/">PiSen</a></li>
-                <li {% if page.active_tag == 'mazer' %}class="active"{% endif %}><a href="/mazer/">MAZER</a></li>
-                <li {% if page.active_tag == 'about' %}class="active"{% endif %}><a href="/about/">About</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
+        <a href="/"><img src="/img/murano_logo_black.gif"></a>
+        <ul class="nav nav-pills pull-right">
+          <li {% if page.active_tag == 'wocol' %}class="active"{% endif %}><a href="/wocol/">WoCol</a></li>
+          <li {% if page.active_tag == 'pisen' %}class="active"{% endif %}><a href="/pisen/">PiSen</a></li>
+          <li {% if page.active_tag == 'mazer' %}class="active"{% endif %}><a href="/mazer/">MAZER</a></li>
+          <li {% if page.active_tag == 'about' %}class="active"{% endif %}><a href="/about/">About</a></li>
+           <li {% if page.active_tag == 'events' %}class="active"{% endif %}><a href="/about/">Events</a></li>
+        </ul>
       </div>
+      <hr>
 
       {{ content }}
 
