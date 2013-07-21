@@ -11,36 +11,40 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/murano.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/lightbox.css" rel="stylesheet" />
   </head>
 
   <body>
 
     <div class="container">
 
-      <div class="masthead">
-        <a href="/"><img src="/img/murano_logo_black.gif"></a>
-
-        <ul class="nav nav-pills pull-right">
-          <li {% if page.active_tag == 'wocol' %}class="active"{% endif %}><a href="/wocol/">WoCol</a></li>
-          <li {% if page.active_tag == 'pisen' %}class="active"{% endif %}><a href="/pisen/">PiSen</a></li>
-          <li {% if page.active_tag == 'mazer' %}class="active"{% endif %}><a href="/mazer/">MAZER</a></li>
-          <li {% if page.active_tag == 'about' %}class="active"{% endif %}><a href="/about/">About</a></li>
-          <li {% if page.active_tag == 'events' %}class="active"{% endif %}><a href="/events/">Events</a></li>
-        </ul>
+      <a href="/"><img src="/img/murano_logo_black.gif" alt="murano pte ltd" width="184" height="56"></a>
+      <div class="navbar navbar-inverse pull-right" style="margin-top:8px">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li {% if page.active_tag == 'wocol' %}class="active"{% endif %}><a href="/wocol/">WOCOL</a></li>
+            <li {% if page.active_tag == 'pisen' %}class="active"{% endif %}><a href="/pisen/">PISEN</a></li>
+            <li {% if page.active_tag == 'mazer' %}class="active"{% endif %}><a href="/mazer/">MAZER</a></li>
+            <li {% if page.active_tag == 'events' %}class="active"{% endif %}><a href="/events/">EVENTS</a></li>
+            <li {% if page.active_tag == 'dealers' %}class="active"{% endif %}><a href="/dealers/">AUTHORISED DEALERS</a></li>
+          </ul>
+        </div>
       </div>
-      <br><br>
+
+      <br class="clearfix">
 
       {{ content }}
 
-      <br><br>
+      <br class="clearfix">
+
       <div class="footer">
         <p>&copy; MURANO PTE LTD 2013</p>
       </div>
 
     </div> <!-- /container -->
 
-    <script src="/js/jquery-2.0.1.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-
+    <script src="/js/lightbox-2.6.min.js"></script>
   </body>
 </html>
