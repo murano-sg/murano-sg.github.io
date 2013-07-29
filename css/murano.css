@@ -13,11 +13,19 @@ body {
   margin: 60px 0;
 }
 
+#about {
+  background-color:white; 
+  padding:15px;
+  -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.2);
+  box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.2);
+}
+
 .product-banner {
   margin-bottom: 18px;
-  -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.8);
-  -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.8);
-  box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.8);
+  -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.5);
+  box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);
 }
 
 /* Main marketing message and sign up button */
