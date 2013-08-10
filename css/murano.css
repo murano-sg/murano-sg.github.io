@@ -32,6 +32,14 @@ body {
   box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);
 }
 
+.img-polaroid {
+  margin: 18px;
+}
+
+.lb-image{
+  max-width: inherit;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   margin: 80px 0;
