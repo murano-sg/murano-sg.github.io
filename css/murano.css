@@ -1,21 +1,18 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 60px;
   background: url(../img/ticks.png) left top repeat ;
+}
+
+#nav {
+  margin: 10px 0;
+  font-weight: bolder;
 }
 
 /* Custom container */
 .container {
-  margin: 0 auto;
-  max-width: 960px;
-}
-.container > hr {
-  margin: 60px 0;
-}
-
-.main {
-  background-color:white; 
-  padding:15px;
+  margin: 0 auto 10px auto;
+  padding-top: 15px;
+  max-width: 970px;
+  background: white;
   -webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.2);
   -moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.2);
   box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.2);
